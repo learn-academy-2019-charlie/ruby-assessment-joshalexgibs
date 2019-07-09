@@ -12,20 +12,29 @@ first_loop.map! { |num|
   num * 2
 }
 
-second_loop.select! do |num|
-  num * 2
-end # FIX
-
 puts "#{first_loop} first loop"
+
+second_loop.collect! do |num|
+  num * 2
+end 
+
 puts "#{second_loop} second loop"
 
 #### 2. From all the built in Ruby methods we've seen in class this week, choose three that you think are particularly helpful and create examples to show how they work.
 
 # your three built in ruby methods
 
-# 
-# 
-# 
+# .split()
+
+# ex. "123456".split("")
+
+# .match
+
+# ex. "heyday".match /[haydey]/
+
+# .map{}
+
+# ex. array.map{ |value| value*2 }
 
 #### 3. Create a method that takes in a sentence and returns a new sentence with the first letter of each word capitalized.
 
@@ -40,7 +49,7 @@ def capital str
   }
   cap_arr.join(' ')
 end
-puts capital sentence
+puts "\n" + capital(sentence)
 
 #### 4.  Create a method that takes in a string and returns a new string with all the vowels removed. HINT:  there's a built in string method for this
 
@@ -59,11 +68,11 @@ def remove_vowels str
   }
   holder_arr.join('')
 end
-puts remove_vowels no_vowels
+puts "\n" + remove_vowels(no_vowels)
 
 #### 5. Look at this horrible ruby code, and fix it to be good ruby code.
 
-
+puts "\n"
 class Example
   def initialize(day)
     @day=day
@@ -103,4 +112,4 @@ end
 
 #### 6b.  Create a new instance of an Animal with a brown color.  Return how many legs the animal has.
 bear = Animal.new 'brown'
-puts bear.legs
+puts "\n" + bear.legs.to_s
