@@ -28,11 +28,11 @@ Try your best to answer each question on your own before looking up the answer o
 
 //Your Answer
 
-    
+¯\_(ツ)_/¯    
 
 //Googled Answer
 
-    
+    One-to-one, one-to-many, and many-to-many relationships
 
 #### 5. What do we call the #{} convention used below? What is it accomplishing?
 
